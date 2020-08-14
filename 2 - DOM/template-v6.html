@@ -13,6 +13,8 @@
         <p v-once>{{title}}</p>
         <p>{{greetings()}}</p>
         <a  v-bind:href="link" target="_blank">Google </a>
+        <hr>
+        <p v-html="linkHtml"></p>
     </div>
     
 
@@ -21,7 +23,9 @@
             el: '#app',
             data: {
                 title: 'Using VueJS 2!',
-                link: 'https://google.com.br'
+                link: 'https://google.com.br',
+                linkHtml: '<a href="http://google.com.br">Google </a>'
+
             },
             methods: {
                 greetings (j    ) {
