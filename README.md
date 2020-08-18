@@ -1,1 +1,1 @@
-# course-vuejs
+# Studying Vuejs in 2020
